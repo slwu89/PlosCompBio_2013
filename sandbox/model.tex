@@ -1,0 +1,23 @@
+\documentclass{article}% For the example only, any class will do
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}% To get more advances positioning options
+\usetikzlibrary{arrows}% To get more arrow heads
+
+\begin{document}
+
+Description of the model
+
+\begin{tikzpicture}
+    \node (E) at (0,0) {TV Viewing};
+    \node (G) at (6,3)  {G};
+    \node (Y1) at (4,0) [draw, rectangle] {$\mathrm{CVD}_{1}$};
+    \node (Y2) at (8,0) {$\mathrm{CVD}_{2}$};
+    \path [->] (E) edge node {} (Y1);
+    \path [->] (G) edge node {} (Y1);
+    \path [->] (G) edge node {} (Y2);
+    \path [->] (Y1) edge node {} (Y2);
+    \path [] (G) edge [dashed, bend right=30] node {} (E);
+\end{tikzpicture}
+
+\end{document}
