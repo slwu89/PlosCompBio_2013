@@ -83,17 +83,18 @@ Emf = matrix(0, nrow = Nf, ncol = sigma)
 Iml = rep(0, Nl)
 Imf = rep(0, Nf)
 
-Sh = rep(1, Nh)
-Eh = matrix(0, nrow = Nh, ncol = tau)
-Ih = matrix(0, nrow = Nh, ncol = rho_max)
-Rh = rep(0, Nh)
-
 SSml = matrix(0, nrow = Nl, ncol = T)
 SSmf = matrix(0, nrow = Nf, ncol = T)
 EEml = array(0, dim = c(Nl, sigma + 1, T))
 EEmf = array(0, dim = c(Nf, sigma + 1, T))
 IIml = matrix(0, nrow = Nl, ncol = T)
 IImf = matrix(0, nrow = Nf, ncol = T)
+
+# humans
+Sh = rep(1, Nh)
+Eh = matrix(0, nrow = Nh, ncol = tau)
+Ih = matrix(0, nrow = Nh, ncol = rho_max)
+Rh = rep(0, Nh)
 
 SSh = matrix(0, nrow = Nh, ncol = T)
 EEh = array(0, dim = c(Nf, tau + 1, T))
