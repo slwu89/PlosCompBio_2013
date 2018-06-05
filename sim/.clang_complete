@@ -1,0 +1,7 @@
+-I./inst/include/
+-I./src/
+-I/usr/local/include
+-I/Library/Frameworks/R.framework/Headers/
+-I/Library/Frameworks/R.framework/Resources/include
+-I/Library/Frameworks/R.framework/Versions/3.5/Resources/library/Rcpp/include
+-I/usr/local/Cellar/glib/2.56.1/include/glib-2.0

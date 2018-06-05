@@ -1,0 +1,2 @@
+PKG_CFLAGS += -std=c11 -g -I/usr/local/Cellar/glib/2.56.1/include/glib-2.0 -I/usr/local/Cellar/glib/2.56.1/lib/glib-2.0/include
+PKG_LIBS += -L/usr/lib -L/usr/local/lib -lgsl -lglib-2.0

@@ -6,7 +6,7 @@ numDiff = function(x, y){
 	sapply(3 : (length(x) - 2), function(ii)
 		(-y[ii + 2] + 8 * y[ii + 1] - 8 * y[ii - 1] + y[ii - 2]) / (12 * (x[2] - x[1])))
 }
-	
+
 # calculate distance matrix for blood-feeding habitats
 dist.F = matrix(0, Nf, Nf)
 for(ii in 1 : Nf){
